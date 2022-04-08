@@ -45,6 +45,17 @@ export const Div3 = styled.div`
   }
 `;
 
+export const Span = styled.span`
+  font-size: 2rem;
+`
+
+export const ATag = styled.a`
+  display: flex; 
+  align-items: center; 
+  color: white;
+  margin-bottom: 20px
+`
+
 // Navigation Links
 export const NavLink = styled.a`
   font-size: 2rem;
