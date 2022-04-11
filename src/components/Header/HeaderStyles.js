@@ -32,11 +32,13 @@ export const NavbarContainer = styled.div`
   z-index: 2;
   border-bottom: 1px solid white;
   padding-bottom: 0;
+  margin-bottom: 2rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+    grid-row-gap: 0;
+    padding-top: 0.5rem;
   }
 `;
 
