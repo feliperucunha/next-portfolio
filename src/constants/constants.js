@@ -47,10 +47,10 @@ export const TimeLineData = [
 ];
 
 export const AccomplishmentsData = [
-  { number: 20, text: 'Open Source Projects'},
-  { number: 1000, text: 'Students', },
-  { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+  { number: 2, text: 'Years of professional experience' },
+  { number: 4, text: 'Years of coding experience', },
+  { number: 10, text: 'Frameworks and tools used over time', },
+  { number: 1000, text: 'Pull Requests on Bitbucket and Gitlab', }
 ];
 
 export const FooterImage = {
