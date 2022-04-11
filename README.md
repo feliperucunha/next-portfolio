@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/feliperucunha/next-portfolio">
-    <img src="public/images/footer_img.jpeg" alt="Logo" width="80" height="80">
+    <img src="public/images/footer_img.jpeg" alt="Logo" height="80">
   </a>
 
   <h3 align="center">My Portfolio</h3>
