@@ -74,22 +74,6 @@ const Timeline = () => {
                       fill="url(#paint0_linear)"
                       fill-opacity="0.33"
                     />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear"
-                        x1="-4.30412e-10"
-                        y1="0.5"
-                        x2="208"
-                        y2="0.500295"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" />
-                        <stop
-                          offset="0.79478"
-                          stop-color="white"
-                          stop-opacity="0"
-                        />
-                      </linearGradient>
-                    </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
                 <CarouselItemText>{item.text}</CarouselItemText>
