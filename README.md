@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/feliperucunha/next-portfolio">
-    <img src="public/images/footer_img.jpeg" alt="Logo" height="80">
+    <img src="public/images/footer_img.jpeg" alt="Logo" height="120">
   </a>
 
   <h3 align="center">My Portfolio</h3>
@@ -24,7 +24,7 @@
     <a href="https://github.com/feliperucunha/next-portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://next-portfolio-iota.vercel.app">View Demo</a>
+    <a href="https://felipe-cunha.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/feliperucunha/next-portfolio/issues">Report Bug</a>
     ·
@@ -76,10 +76,8 @@ This projects contains my heart and soul. Most details about my career are there
 This section should list any major frameworks/libraries used to build this project.
 
 * [React.js](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Ant.Design](https://ant.design/)
-* [Moment.js](https://momentjs.com/)
-* [Chart.js](https://www.chartjs.org/)
+* [Next.js](https://redux.js.org/)
+* [Styled Components](https://ant.design/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
