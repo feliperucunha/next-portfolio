@@ -103,7 +103,26 @@ export const Slogan = styled.p`
 
 export const SocialContainer = styled.div`
 	display: flex;
-  align-items: center;
+  	align-items: center;
+	:hover {
+		transform: scale(1.1);
+	}
+
+	@media ${props => props.theme.breakpoints.md}{
+		justify-content: center;
+		padding-right: 16px;
+		flex-wrap: wrap;
+	}
+`
+
+export const ImageContainer = styled.div`
+	display: flex;
+  	align-items: center;
+	cursor: pointer;
+	transition: 0.5s;
+	:hover {
+		transform: scale(1.3);
+	}
 
 	@media ${props => props.theme.breakpoints.md}{
 		justify-content: center;

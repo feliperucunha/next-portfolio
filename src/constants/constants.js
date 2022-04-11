@@ -52,3 +52,7 @@ export const AccomplishmentsData = [
   { number: 1900, text: 'Github Followers', },
   { number: 5000, text: 'Github Stars', }
 ];
+
+export const FooterImage = {
+  image: '/images/footer_img.jpeg'
+};
