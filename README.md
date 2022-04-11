@@ -118,9 +118,7 @@ First of all you need the package manager YARN, to install it use the command be
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The home page has some top information about coins and some news.
-This dashboard is pretty straight forward. You can access anything through the navbar and click on any card
-to see the specific details about a coin. You can also check the news on the news tab.
+You can scroll down to see my projects, time line and all kinds of stuff about me or you can use the navbar. Almost everything has a link to my social media and also there is a button that activates the "mailto" method right at the start.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
