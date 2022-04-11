@@ -90,10 +90,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-First of all you need the package manager NPM, to install it use the command below:
-* npm
+First of all you need the package manager YARN, to install it use the command below:
+* yarn
   ```sh
-  npm install npm@latest -g
+  yarn install yarn@latest -g
   ```
 
 ### Installation
