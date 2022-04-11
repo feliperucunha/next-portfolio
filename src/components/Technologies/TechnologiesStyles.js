@@ -61,11 +61,11 @@ export const ListContainer = styled.div`
 `
 
 export const ListTitle = styled.h4`
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
   margin-bottom: 8px;
 
 @media ${props => props.theme.breakpoints.md}{

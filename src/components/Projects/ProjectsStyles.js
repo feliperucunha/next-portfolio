@@ -96,8 +96,7 @@ padding:1rem 1.5rem;
 border-radius: 10px;
 transition: 0.5s;
 &:hover{
-  background: #801414;
-
+  transform: scale(1.1);
 }
 `;
 

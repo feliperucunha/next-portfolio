@@ -3,10 +3,10 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, ATag } from './HeaderStyles';
+import { NavbarContainer, Div1, Div2, Div3, NavLink, SocialIcons, Span, ATag } from './HeaderStyles';
 
 const Header = () =>  (
-  <Container>
+  <NavbarContainer>
     <Div1>
       <Link href="/">
         <ATag>
@@ -32,17 +32,17 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/feliperucunha">
+      <SocialIcons target="_blank" href="https://github.com/feliperucunha">
         <AiFillGithub size={30} />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/feliperubencunha/">
+      <SocialIcons target="_blank" href="https://www.linkedin.com/in/feliperubencunha/">
         <AiFillLinkedin size={30} />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/feliperubeen">
+      <SocialIcons target="_blank" href="https://www.instagram.com/feliperubeen">
         <AiFillInstagram size={30} />
       </SocialIcons>
     </Div3>
-  </Container>
+  </NavbarContainer>
 );
 
 export default Header;

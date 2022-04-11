@@ -17,6 +17,29 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
+
+export const NavbarContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 16.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background: #0F1624;
+  z-index: 2;
+  border-bottom: 1px solid white;
+  padding-bottom: 0;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+`;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
