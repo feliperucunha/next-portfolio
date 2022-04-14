@@ -12,7 +12,7 @@ const Hero = (props) => (
         Felipe's Portfolio
       </SectionTitle>
       <SectionText>
-        I am a Frontend Engineer with a Computer Engineering Degree and currently working at Compass.UOL
+        A Frontend Engineer with a Computer Engineering Degree and currently working at Compass.UOL
       </SectionText>
       <Button onClick={() => window.location.href = "mailto:feliperubenmv@gmail.com"}>
         Email me

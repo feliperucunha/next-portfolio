@@ -25,12 +25,10 @@ export const NavbarContainer = styled.div`
   grid-column-gap: 16.5rem;
   padding: 1rem;
   padding-top: 2rem;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
   background: #0F1624;
+  border-radius: 5px;
   z-index: 2;
-  border-bottom: 1px solid white;
+  box-shadow: 0px 5px 15px 0px;
   padding-bottom: 0;
   margin-bottom: 2rem;
 

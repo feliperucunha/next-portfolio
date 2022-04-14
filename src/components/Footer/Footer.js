@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { FooterImage } from '../../constants/constants';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, ImageContainer, SocialIconsContainer } from './FooterStyles';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { SocialIcons } from '../Header/HeaderStyles';
+import { CompanyContainer, SocialContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, ImageContainer, SocialIconsContainer } from './FooterStyles';
 
 const Footer = () => {
   return (
@@ -15,6 +17,22 @@ const Footer = () => {
           <LinkTitle>Email</LinkTitle>
           <LinkItem href="mailto:feliperubenmv@gmail.com">
             feliperubenmv@gmail.com
+          </LinkItem>
+        </LinkColumn>
+        <LinkColumn>
+          <LinkTitle noMargin>Reach me</LinkTitle>
+          <LinkItem>
+            <SocialContainer>
+              <SocialIcons target="_blank" href="https://github.com/feliperucunha">
+                <AiFillGithub size={30} />
+              </SocialIcons>
+              <SocialIcons target="_blank" href="https://www.linkedin.com/in/feliperubencunha/">
+                <AiFillLinkedin size={30} />
+              </SocialIcons>
+              <SocialIcons target="_blank" href="https://www.instagram.com/feliperubeen">
+                <AiFillInstagram size={30} />
+              </SocialIcons>
+            </SocialContainer>
           </LinkItem>
         </LinkColumn>
       </LinkList>

@@ -6,15 +6,6 @@ import { DiCssdeck } from 'react-icons/di';
 import { NavbarContainer, Div1, Div2, Div3, NavLink, SocialIcons, Span, ATag } from './HeaderStyles';
 
 const Header = () =>  {
-  const scrollToHash = props => {
-    const element = document.querySelector(`#${props}`);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest'
-      });
-    }
-  };
 
   return (
     <NavbarContainer>
@@ -27,19 +18,19 @@ const Header = () =>  {
       </Div1>
       <Div2>
         <li>
-          <a onClick={() => scrollToHash('projects')}>
+          <Link href="#projects">
             <NavLink>Projects</NavLink>
-          </a>
+          </Link>
         </li>
         <li>
-          <a onClick={() => scrollToHash('tech')}>
+          <Link href="#tech">
             <NavLink>Technologies</NavLink>
-          </a>
-        </li>
+          </Link>
+        </li>        
         <li>
-          <a onClick={() => scrollToHash('about')}>
+          <Link href="#about">
             <NavLink>About</NavLink>
-          </a>
+          </Link>
         </li>
       </Div2>
       <Div3>

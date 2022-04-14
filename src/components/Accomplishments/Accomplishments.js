@@ -5,7 +5,7 @@ import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
 import { AccomplishmentsData } from '../../constants/constants';
 
 const Accomplishments = () => (
-  <Section>
+  <Section id="accomplishments">
   <SectionTitle>Personal Achievements</SectionTitle>
   <Boxes>
     {AccomplishmentsData.map((card, index) => (
