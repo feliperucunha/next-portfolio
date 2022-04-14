@@ -13,7 +13,7 @@ export default styled.a`
   transition: .2s;
 
   &:hover {
-    color: blue;
+    color: aqua;
     transform: scale(1.1);
   }
 

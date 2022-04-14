@@ -32,6 +32,13 @@ export const NavbarContainer = styled.div`
   padding-bottom: 0;
   margin-bottom: 2rem;
 
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0;
+    padding-top: 2rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-column-gap: 0.5rem;
