@@ -182,10 +182,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Came from Vet School do Computer Engineering at UFPA', },
-  { year: 2018, text: 'Started studying C and Python', },
+  { year: 2017, text: 'Came from Vet School to Computer Engineering at UFPA', },
+  { year: 2018, text: 'Started studying the basics of C and Python', },
   { year: 2019, text: 'Entered an Internship at the Public Ministry as a FullStack Developer', },
-  { year: 2020, text: 'Started working at a Startup called Cosmobots and later a big company called Viasoft', },
+  { year: 2020, text: 'Started working at a Startup called Cosmobots and later at a company called Viasoft', },
   { year: 2021, text: `Got a job at Brazil's greatest software house: Compass.UOL`, },
   { year: 2022, text: 'Got promoted to mid level developer and currently improving my skills', },
 ];

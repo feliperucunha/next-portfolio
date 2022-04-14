@@ -24,6 +24,7 @@ const Technologies = () =>  (
         />
       ))}
     </List>
+    <SectionDivider colorAlt />
     <List>
       <ListItem>
         <picture>
