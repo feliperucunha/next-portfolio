@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ToggleContainer, InnerIcon } from './styles';
 import { BsToggleOff, BsToggleOn, BsMoon, BsSun } from 'react-icons/bs';
+import { useAppContext } from '../../context';
 
 const ThemeToggle = ({ props }) => {
-  const [turnTheme, setTurnTheme] = useState(true);
+  const { turnTheme, setTurnTheme } = useAppContext();
+
   const handleToggle = () => {
     setTurnTheme(toggle => !toggle);
   }
