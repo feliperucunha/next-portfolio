@@ -54,6 +54,7 @@ export const Div1 = styled.div`
   align-content: center;
   gap: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
     grid-area: 1 / 1 / 2 / 3;
   }
 `;

@@ -25,9 +25,11 @@ export const GlobalStyles = createGlobalStyle`
   }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${props => props.theme.fonts.title};
+    color: ${props => props.theme.colors.title};
   }
   a {
     text-decoration: none;
+    color: ${props => props.theme.colors.title};
   }
   li{
     list-style: none;

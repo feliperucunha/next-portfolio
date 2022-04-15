@@ -8,7 +8,7 @@ const Theme = ({ children }) => {
   const { turnTheme } = useAppContext();
 
   return (
-    <ThemeProvider theme={turnTheme ? theme : lightTheme}>
+    <ThemeProvider theme={!turnTheme ? theme : lightTheme}>
       <GlobalStyles />
       {children}
     </ThemeProvider>

@@ -200,3 +200,7 @@ export const AccomplishmentsData = [
 export const FooterImage = {
   image: '/images/footer_img.jpeg'
 };
+
+export const ModalImage = {
+  image: '/images/eyes.png'
+};

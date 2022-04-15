@@ -3,6 +3,7 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import ThemeToggle from '../ThemeToggle';
+import GeneralModal from '../Modal';
 
 import { NavbarContainer, Div1, Div2, Div3, NavLink, SocialIcons, Span, ATag } from './styles';
 
@@ -19,6 +20,7 @@ const Header = () =>  {
         <ThemeToggle />
       </Div1>
       <Div2>
+        <GeneralModal />
         <li>
           <Link href="#projects">
             <NavLink>Projects</NavLink>

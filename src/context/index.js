@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
-  const [turnTheme, setTurnTheme] = useState(true);
+  const [turnTheme, setTurnTheme] = useState(false);
 
   const sharedState = {turnTheme, setTurnTheme};
 
