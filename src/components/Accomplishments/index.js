@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
-import { AccomplishmentsData } from '../../constants/constants';
+import { Box, Boxes, BoxNum, BoxText } from './styles';
+import { AccomplishmentsData } from '../../constants';
 
 const Accomplishments = () => (
   <Section id="accomplishments">

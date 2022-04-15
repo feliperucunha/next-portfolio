@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { LeftSection } from './styles';
 
 const Hero = (props) => (
   <Section row>

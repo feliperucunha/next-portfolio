@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledTechIcon from './TechIconStyles';
+import StyledTechIcon from './styles';
 
 const TechIcon = ({ text, Icon, doc }) => {
   return (

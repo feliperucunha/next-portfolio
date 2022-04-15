@@ -1,25 +1,14 @@
 import { ThemeProvider } from 'styled-components';
-
 import theme from "../themes/default";
 import lightTheme from "../themes/light";
-import GlobalStyles from './globals';
-import { useState } from 'react';
+import { GlobalStyles } from './globals';
 
 const Theme = ({ children }) => {
-  const [darkTheme, setDarkTheme] = useState(true);
+  const dark = true;
 
   return (
-    <ThemeProvider theme={darkTheme? theme : lightTheme}>
+    <ThemeProvider theme={dark ? theme : lightTheme}>
       <GlobalStyles />
-      <form action="#">
-          <label className="switch">
-            <input
-              type="checkbox"
-              onChange={() => setDarkTheme(toggle => !toggle)}
-            />
-            <span className="slider"></span>
-          </label>
-        </form>
       {children}
     </ThemeProvider>
   )

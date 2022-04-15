@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
-import { Button } from './BackToTopButtonStyles';
+import { Button } from './styles';
 import react, { useEffect } from 'react';
 
 const ScrollButton = () =>{

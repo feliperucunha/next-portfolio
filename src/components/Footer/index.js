@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { FooterImage } from '../../constants/constants';
+import { FooterImage } from '../../constants';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, SocialContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, ImageContainer, SocialIconsContainer } from './FooterStyles';
+import { SocialIcons } from '../Header/styles';
+import { CompanyContainer, SocialContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, ImageContainer, SocialIconsContainer } from './styles';
 
 const Footer = () => {
   return (

@@ -2,8 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
+import ThemeToggle from '../ThemeToggle';
 
-import { NavbarContainer, Div1, Div2, Div3, NavLink, SocialIcons, Span, ATag } from './HeaderStyles';
+import { NavbarContainer, Div1, Div2, Div3, NavLink, SocialIcons, Span, ATag } from './styles';
 
 const Header = () =>  {
 
@@ -15,6 +16,7 @@ const Header = () =>  {
             <DiCssdeck size="3rem" /> <Span>Felipe Cunha</Span>
           </ATag>
         </Link>
+        <ThemeToggle />
       </Div1>
       <Div2>
         <li>
