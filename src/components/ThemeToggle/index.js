@@ -12,9 +12,12 @@ const ThemeToggle = ({ props }) => {
 
   return (
     <ToggleContainer>
-        {!turnTheme ? <BsToggleOn style={{cursor: 'pointer'}} size={30} onClick={handleToggle} /> : <BsToggleOff style={{cursor: 'pointer'}} size={30} onClick={handleToggle} />}
+        {!turnTheme ?
+          <BsToggleOn style={{cursor: 'pointer'}} size={30} onClick={handleToggle} /> :
+          <BsToggleOff style={{cursor: 'pointer'}} size={30} onClick={handleToggle} />
+        }
       <InnerIcon>
-        {!turnTheme ? <BsMoon style={{cursor: 'pointer'}} size={12} /> : <BsSun style={{cursor: 'pointer'}} size={12} />}
+        {!turnTheme ? <BsMoon size={12} /> : <BsSun size={12} />}
       </InnerIcon>
     </ToggleContainer>
   )
