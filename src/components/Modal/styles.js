@@ -1,18 +1,36 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5rem; */
+  position: fixed;
+  top: 15%;
+  left: 28%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  z-index: 3;
+  background-color: white;
+  text-align: center;
+  overflow: auto;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem; */
+
+  }
+`;
+
+export const LastContainer = styled.div`
+  position: fixed;
+  top: 25%;
+  left: 22%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  z-index: 3;
+  background-color: white;
+  text-align: center;
+  overflow: auto;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+
   }
 `;
 
@@ -22,8 +40,7 @@ export const Div1 = styled.div`
   align-items: center;
   padding-bottom: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    /* display: flex;
-    grid-area: 1 / 1 / 2 / 3; */
+
   }
 `;
 
@@ -36,10 +53,11 @@ export const ButtonContainer = styled.div`
       padding: 10px;
     }
     #button-six {
+      display: flex;
       margin: 0 -.5em;
       padding: 1em 3em;
       background: darkturquoise;
-      background: linear-gradient(-45deg, #414141, #414141, #414141, #414141);
+      background: ${({ colorful }) => (!colorful ? 'linear-gradient(-45deg, #414141, #414141, #414141, #414141)' : '-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB')};
       background-size: 400% 400%;
       border-radius: 10px;
     }

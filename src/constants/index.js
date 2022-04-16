@@ -202,5 +202,8 @@ export const FooterImage = {
 };
 
 export const ModalImage = {
-  image: '/images/eyes.gif'
+  image: '/images/eyes.gif',
+  image2: '/images/margit.jpeg',
+  image3: '/images/worthy.png',
+  image4: '/images/praise.png'
 };
