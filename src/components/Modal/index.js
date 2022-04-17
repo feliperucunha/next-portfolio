@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAppContext } from '../../context';
-import { Div1, Span, Container, StyledButton, ButtonContainer, LastContainer } from './styles';
+import { Div1, LastContainersContent, Span, Container, StyledButton, ButtonContainer, LastContainer } from './styles';
 import Image from 'next/image';
 import { ModalImage } from "../../constants";
 
@@ -63,7 +63,7 @@ export default function GeneralModal() {
     if (modalTurn === 3) {
       setTimeout(() => {
         setIsFourthOpen(true)
-      }, 2000);
+      }, 2500);
     }
   }, [turnTheme, modalTurn]);
 
@@ -141,14 +141,16 @@ export default function GeneralModal() {
       )}
       {isFourthOpen && (
         <LastContainer>
-          <Span>I tried to warn you but you would not listen...</Span>
-          <StyledButton onClick={toggleModal}>
-            <ButtonContainer>
-              <div id="button-six">
-                <a>Return to the Dark Side</a>
-              </div>
-            </ButtonContainer>
-          </StyledButton>
+          <LastContainersContent>
+            <Span>I tried to warn you but you would not listen...</Span>
+            <StyledButton onClick={toggleModal}>
+              <ButtonContainer>
+                <div id="button-six">
+                  <a>Return to the Dark Side</a>
+                </div>
+              </ButtonContainer>
+            </StyledButton>
+          </LastContainersContent>
         </LastContainer>
       )}
     </>
