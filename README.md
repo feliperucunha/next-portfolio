@@ -158,6 +158,11 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## PS:
+
+Since I don't like light themes in general, there is a joke inside the theme switch that consists in three steps with a few memes, hope you like it.
+The setup for a theme switcher is all developed and I had to setup a react context to do that as well. I had make an effort to pull that joke.
+
 
 
 <!-- LICENSE -->
