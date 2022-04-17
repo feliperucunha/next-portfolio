@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './styles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, SpinningIconContainer } from './styles';
 import { IconData } from '../../constants';
 import TechIcon from '../TechIcon';
 
@@ -27,9 +27,9 @@ const Technologies = () =>  (
     <SectionDivider colorAlt />
     <List>
       <ListItem>
-        <picture>
+        <SpinningIconContainer>
           <DiReact size="3rem" />
-        </picture>
+        </SpinningIconContainer>
         <ListContainer>
           <ListTitle colorAlt>Front-End</ListTitle>
           <ListParagraph>
@@ -58,8 +58,8 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            Experience applying <br />
+            layouts from Figma
           </ListParagraph>
         </ListContainer>
       </ListItem>

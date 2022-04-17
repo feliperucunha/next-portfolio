@@ -179,6 +179,15 @@ export const projects = [
     visit: 'https://pedantic-euclid-cf2200.netlify.app/',
     id: 3,
   },
+  {
+    title: 'This Portfolio',
+    description: "Well, I guess you can take a look around.",
+    image: '/images/5.jpeg',
+    tags: ['React.js', 'Next.js', 'Styled Components', 'Context API', 'Themes'],
+    source: 'https://github.com/feliperucunha/next-portfolio',
+    visit: 'https://felipe-cunha.vercel.app/',
+    id: 3,
+  },
 ];
 
 export const TimeLineData = [
@@ -197,13 +206,10 @@ export const AccomplishmentsData = [
   { number: 1000, text: 'Pull Requests on Bitbucket and Gitlab', }
 ];
 
-export const FooterImage = {
-  image: '/images/footer_img.jpeg'
-};
-
-export const ModalImage = {
+export const ImageData = {
   image: '/images/eyes.gif',
   image2: '/images/margit.jpeg',
   image3: '/images/worthy.png',
-  image4: '/images/praise.png'
+  image4: '/images/praise.png',
+  image5: '/images/footer_img.jpeg'
 };

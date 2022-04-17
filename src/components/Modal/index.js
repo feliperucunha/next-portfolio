@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useAppContext } from '../../context';
 import { Div1, LastContainersContent, Span, Container, StyledButton, ButtonContainer, LastContainer } from './styles';
 import Image from 'next/image';
-import { ModalImage } from "../../constants";
+import { ImageData } from "../../constants";
 
 export default function GeneralModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +74,7 @@ export default function GeneralModal() {
           <Span>PLEASE, TURN THE LIGHTS OFF!</Span>
           <Div1>
             <Image
-              src={ModalImage.image}
+              src={ImageData.image}
               alt="My eyes are burning (Sponge Bob Reference)"
               width={600}
               height={400}
@@ -95,7 +95,7 @@ export default function GeneralModal() {
           <Span>PLEASE, TURN THE LIGHTS OFF!</Span>
           <Div1>
             <Image
-              src={ModalImage.image2}
+              src={ImageData.image2}
               alt="Someone must extinguish thy flame (Elden Ring Reference)"
               width={600}
               height={400}
@@ -116,7 +116,7 @@ export default function GeneralModal() {
           <Span>So you really want it, huh?</Span>
           <Div1>
             <Image
-              src={ModalImage.image3}
+              src={ImageData.image3}
               alt="Finally a worthy opponent, our battle will be legendary (Kung Fu Panda Reference)"
               width={600}
               height={400}
@@ -128,7 +128,7 @@ export default function GeneralModal() {
               <div id="button-six">
                 <a>Use the stupid white theme</a>
                 <Image
-                  src={ModalImage.image4}
+                  src={ImageData.image4}
                   alt="Finally a worthy opponent, our battle will be legendary (Kung Fu Panda Reference)"
                   width={40}
                   height={50}

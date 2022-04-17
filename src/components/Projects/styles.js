@@ -87,12 +87,18 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
+display: flex;
+justify-content: center;
+align-items: center;
 color: white;
 background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 font-size: 1.6rem;
 padding: 1rem 1.5rem;
 border-radius: 10px;
 transition: 0.5s;
+  svg {
+    padding-left: 2px;
+  }
   &:hover{
     transform: scale(1.1);
   }
@@ -100,13 +106,15 @@ transition: 0.5s;
 
 export const TagList = styled.ul`
 display: flex;
-justify-content: space-around;
+justify-content: center;
+align-items: center;
 padding: 2rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: inline;
   }
 `
 export const Tag = styled.li`
+padding-right: 10px;
 color: #d8bfbf;
 font-size: 1.5rem;
 `;

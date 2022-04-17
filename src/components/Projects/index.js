@@ -2,6 +2,7 @@ import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './styles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { AiOutlineGithub } from 'react-icons/ai';
 import { projects } from '../../constants';
 
 const Projects = () => (
@@ -41,7 +42,7 @@ const Projects = () => (
               Demo
             </ExternalLinks>
             <ExternalLinks target="_blank" href={source}>
-              Source
+              Code <AiOutlineGithub />
             </ExternalLinks>
           </UtilityList>
         </BlogCard>

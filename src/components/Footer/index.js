@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { FooterImage } from '../../constants';
+import { ImageData } from '../../constants';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { SocialIcons } from '../Header/styles';
 import { CompanyContainer, SocialContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, ImageContainer, SocialIconsContainer } from './styles';
@@ -43,7 +43,7 @@ const Footer = () => {
         <ImageContainer>
           <LinkItem target="_blank" href="https://www.linkedin.com/in/feliperubencunha/">
             <Image 
-              src={FooterImage.image}
+              src={ImageData.image5}
               alt="Picture of the author"
               width={150}
               height={200}
