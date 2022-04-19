@@ -55,6 +55,11 @@ export const IconData = [
     doc: 'https://styled-components.com/docs',
   },
   {
+    text: 'Tailwind',
+    Icon: SiIcons.SiTailwindcss,
+    doc: 'https://tailwindcss.com/docs/installation',
+  },
+  {
     text: 'Chart.js',
     Icon: SiIcons.SiChartdotjs,
     doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
@@ -90,11 +95,6 @@ export const IconData = [
     doc: 'https://git-scm.com/docs/git/pt_BR',
   },
   {
-    text: 'GitHub',
-    Icon: FaIcons.FaGithub,
-    doc: 'https://docs.github.com/en/get-started',
-  },
-  {
     text: 'Bitbucket',
     Icon: FaIcons.FaBitbucket,
     doc: 'https://docs.github.com/en/get-started',
@@ -119,11 +119,6 @@ export const IconData = [
     Icon: SiIcons.SiNetlify,
     doc: 'https://docs.github.com/en/get-started',
   },
-  // {
-  //   text: 'Tailwind',
-  //   Icon: SiIcons.SiTailwindcss,
-  //   doc: 'https://tailwindcss.com/docs/installation',
-  // },
   {
     text: 'Node.js',
     Icon: FaIcons.FaNodeJs,
@@ -159,6 +154,15 @@ export const projects = [
     tags: ['React.js', 'Next.js', 'AntDesign', 'LESS'],
     source: 'https://github.com/feliperucunha/anime-catalog',
     visit: 'https://teste-company-hero.vercel.app',
+    id: 1,
+  },
+  {
+    title: 'Avarage Blog',
+    description:"This is a Medium Blog clone built for learning purposes. It uses a CMS to handle the posts easily.",
+    image: '/images/6.png',
+    tags: ['React.js', 'Next.js', 'Tailwind CSS', 'Sanity CMS', 'TypeScript'],
+    source: 'https://github.com/feliperucunha/avarage-blog',
+    visit: 'https://avarege-blog.vercel.app',
     id: 1,
   },
   {
