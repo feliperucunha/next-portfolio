@@ -139,6 +139,15 @@ export const IconData = [
 
 export const projects = [
   {
+    title: 'New Age NFT',
+    description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
+      image: '/images/7.png',
+      tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
+    source: 'https://github.com/feliperucunha/nft-project',
+    visit: 'https://nft-project-psi.vercel.app',
+    id: 2,
+  },
+  {
     title: 'Crypto Data',
     description: "A Frontend dashboard that uses a public API to pull out data about the world of Crypto Coins.",
       image: '/images/1.png',
@@ -164,15 +173,6 @@ export const projects = [
     source: 'https://github.com/feliperucunha/anime-catalog',
     visit: 'https://teste-company-hero.vercel.app',
     id: 1,
-  },
-  {
-    title: 'Github Searcher',
-    description: "A Frontend project that uses the Github API to look for users and list their repositories [PT-BR]",
-      image: '/images/3.png',
-      tags: ['React', 'Semantic UI', 'JavaScript'],
-    source: 'https://github.com/feliperucunha/github-searcher',
-    visit: 'https://github-searcher-mocha.vercel.app/',
-    id: 2,
   },
   {
     title: 'LocalTips',
