@@ -140,9 +140,9 @@ export const projects = [
 
   {
     title: 'Universal+ Streaming Web and CTV apps',
-    description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
+    description: "A huge project ordered by Universal to build it's streaming service on all platforms. I was in charge of building the web and ctv versions along with my team.",
       image: '/images/8.png',
-      tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
+      tags: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Styled Components', 'Accedo Control (CMS)'],
     source: '#',
     visit: false,
     isPrivate: true,
@@ -150,9 +150,9 @@ export const projects = [
   },
   {
     title: 'Carters Store',
-    description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
+    description: "Renewal of the old Carters website to a modern React version.",
       image: '/images/10.png',
-      tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
+      tags: ['React.js', 'Chakra UI', 'TypeScript'],
     source: '#',
     visit: 'https://carters.com/',
     isPrivate: true,
@@ -160,9 +160,9 @@ export const projects = [
   },
   {
     title: 'LTD Commodities Store',
-    description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
+    description: "Renewal of the old LTD website to a modern React version",
       image: '/images/9.png',
-      tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
+      tags: ['React.js', 'SCSS', 'Oracle CMS', 'TypeScript'],
     source: '#',
     visit: 'https://ltdcommodities.com/',
     isPrivate: true,
