@@ -12,76 +12,78 @@ export default function GeneralModal() {
   const [modalTurn, setModalTurn] = useState(0);
   const { turnTheme, setTurnTheme } = useAppContext();
 
-  function toggleModal() {
-    if (modalTurn === 0) {
-      return toggleFirstModal();
-    }
-    if (modalTurn === 1) {
-      return toggleSecondModal();;
-    }
-    if (modalTurn === 2) {
-      return toggleThirdModal();
-    }
-    if (modalTurn === 3) {
-      return toggleFourthModal();
-    }
-  }
+  // function toggleModal() {
+  //   if (modalTurn === 0) {
+  //     return toggleFirstModal();
+  //   }
+  //   if (modalTurn === 1) {
+  //     return toggleSecondModal();;
+  //   }
+  //   if (modalTurn === 2) {
+  //     return toggleThirdModal();
+  //   }
+  //   if (modalTurn === 3) {
+  //     return toggleFourthModal();
+  //   }
+  // }
 
-  function toggleFirstModal() {
-    setIsOpen(!isOpen);
-    setTurnTheme(false);
-    setModalTurn(1);
-  }
+  // function toggleFirstModal() {
+  //   setIsOpen(!isOpen);
+  //   setTurnTheme(false);
+  //   setModalTurn(1);
+  // }
 
-  function toggleSecondModal() {
-    setIsSecondOpen(!isSecondOpen);
-    setTurnTheme(false);
-    setModalTurn(2);
-  }
+  // function toggleSecondModal() {
+  //   setIsSecondOpen(!isSecondOpen);
+  //   setTurnTheme(false);
+  //   setModalTurn(2);
+  // }
 
-  function toggleThirdModal() {
-    setIsThirdOpen(!isThirdOpen);
-    setModalTurn(3);
-  }
+  // function toggleThirdModal() {
+  //   setIsThirdOpen(!isThirdOpen);
+  //   setModalTurn(3);
+  // }
 
-  function toggleFourthModal() {
-    setIsFourthOpen(!isFourthOpen);
-    setTurnTheme(false);
-    setModalTurn(0);
-  }
+  // function toggleFourthModal() {
+  //   setIsFourthOpen(!isFourthOpen);
+  //   setTurnTheme(false);
+  //   setModalTurn(0);
+  // }
+
+  // useEffect(() => {
+  //   if (turnTheme && (modalTurn === 0)) {
+  //     setIsOpen(true);
+  //   }
+  //   if (turnTheme && (modalTurn === 1)) {
+  //     setIsSecondOpen(true);
+  //   }
+  //   if (turnTheme && (modalTurn === 2)) {
+  //     setIsThirdOpen(true);
+  //   }
+  //   if (modalTurn === 3) {
+  //     setTimeout(() => {
+  //       setIsFourthOpen(true)
+  //     }, 2500);
+  //   }
+  // }, [turnTheme, modalTurn]);
 
   useEffect(() => {
-    if (turnTheme && (modalTurn === 0)) {
-      setIsOpen(true);
+    if (turnTheme) {
+      setIsOpen(true)
+      setTurnTheme(false)
     }
-    if (turnTheme && (modalTurn === 1)) {
-      setIsSecondOpen(true);
-    }
-    if (turnTheme && (modalTurn === 2)) {
-      setIsThirdOpen(true);
-    }
-    if (modalTurn === 3) {
-      setTimeout(() => {
-        setIsFourthOpen(true)
-      }, 2500);
-    }
-  }, [turnTheme, modalTurn]);
+  }, [turnTheme, isOpen])
 
   return (
     <>
       {isOpen && (
         <Container>
-          <Span>PLEASE, TURN THE LIGHTS OFF!</Span>
           <Div1>
-            <Image
-              src={ImageData.image}
-              alt="My eyes are burning (Sponge Bob Reference)"
-              width={600}
-              height={400}
-              placeholder="blur"
-            />
+            <Span>
+              I lied, there is no white theme.
+            </Span>
           </Div1>
-          <StyledButton onClick={toggleModal}>
+          <StyledButton onClick={() => setIsOpen(!open)}>
             <ButtonContainer>
               <div id="button-six">
                 <a>Return to the Dark Side</a>
@@ -90,7 +92,7 @@ export default function GeneralModal() {
           </StyledButton>
         </Container>
       )}
-      {isSecondOpen && (
+      {/* {isSecondOpen && (
         <Container>
           <Span>PLEASE, TURN THE LIGHTS OFF!</Span>
           <Div1>
@@ -152,7 +154,7 @@ export default function GeneralModal() {
             </StyledButton>
           </LastContainersContent>
         </LastContainer>
-      )}
+      )} */}
     </>
   );
 }

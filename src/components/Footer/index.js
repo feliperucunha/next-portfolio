@@ -45,8 +45,8 @@ const Footer = () => {
             <Image 
               src={ImageData.image5}
               alt="Felipe Cunha's Picture"
-              width={150}
-              height={160}
+              width={170}
+              height={180}
             />
           </LinkItem>
         </ImageContainer>

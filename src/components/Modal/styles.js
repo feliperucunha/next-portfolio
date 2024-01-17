@@ -4,20 +4,15 @@ export const Container = styled.div`
   position: fixed;
   height: 100vh;
   width: 100vw;
-  padding: 1rem;
-  padding-top: 7rem;
+  padding: 10rem;
   z-index: 3;
   background-color: white;
   text-align: center;
   overflow: auto;
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding-top: 5rem;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding-top: 10rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const LastContainer = styled.div`
@@ -54,6 +49,17 @@ export const Div1 = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+
+  transition: 0.5s;
+  :hover {
+    transform: scale(1.02);
+  }
+
+  div {
+    display: flex;
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     img {
@@ -73,11 +79,15 @@ export const ButtonContainer = styled.div`
     #button-six {
       display: flex;
       margin: 0 -.5em;
-      padding: 1em 3em;
+      padding: .5em 2em;
       background: darkturquoise;
       background: ${({ colorful }) => (!colorful ? 'linear-gradient(-45deg, #414141, #414141, #414141, #414141)' : '-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB')};
       background-size: 400% 400%;
       border-radius: 10px;
+      
+      a {
+        color: white;
+      }
     }
     :hover {
       transform: scale(1.1);
