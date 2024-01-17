@@ -11,7 +11,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:+5591987485395">+55 91 987485395</LinkItem>
+          <LinkItem href="tel:+5591987485395">+55 41 988117007</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
@@ -44,9 +44,9 @@ const Footer = () => {
           <LinkItem target="_blank" href="https://www.linkedin.com/in/feliperubencunha/">
             <Image 
               src={ImageData.image5}
-              alt="Picture of the author"
+              alt="Felipe Cunha's Picture"
               width={150}
-              height={200}
+              height={160}
             />
           </LinkItem>
         </ImageContainer>

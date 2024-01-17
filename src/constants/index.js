@@ -2,7 +2,6 @@ import * as FaIcons from 'react-icons/fa';
 import * as SiIcons from 'react-icons/si';
 import * as GrIcons from 'react-icons/gr';
 
-
 export const IconData = [
   {
     text: 'JavaScript',
@@ -138,14 +137,36 @@ export const IconData = [
 
 
 export const projects = [
+
   {
-    title: 'New Age NFT',
+    title: 'Universal+ Streaming Web and CTV apps',
     description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
-      image: '/images/7.png',
+      image: '/images/8.png',
       tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
-    source: 'https://github.com/feliperucunha/nft-project',
-    visit: 'https://nft-project-psi.vercel.app',
-    id: 2,
+    source: '#',
+    visit: false,
+    isPrivate: true,
+    id: 0,
+  },
+  {
+    title: 'Carters Store',
+    description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
+      image: '/images/10.png',
+      tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
+    source: '#',
+    visit: 'https://carters.com/',
+    isPrivate: true,
+    id: 0,
+  },
+  {
+    title: 'LTD Commodities Store',
+    description: "A Minting NFT Platform that can handle actual Minting of my NFTs usign ThirdWeb and the Rinkeby Network.",
+      image: '/images/9.png',
+      tags: ['React.js', 'Next.js', 'Sanity CMS', 'TypeScript', 'Tailwind CSS'],
+    source: '#',
+    visit: 'https://ltdcommodities.com/',
+    isPrivate: true,
+    id: 0,
   },
   {
     title: 'Crypto Data',
@@ -154,7 +175,7 @@ export const projects = [
       tags: ['React.js', 'AntDesign', 'Chart.js', 'Redux'],
     source: 'https://github.com/feliperucunha/crypto-data',
     visit: 'https://crypto-data-iota.vercel.app',
-    id: 0,
+    id: 1,
   },
   {
     title: 'Average Blog',
@@ -163,25 +184,7 @@ export const projects = [
     tags: ['React.js', 'Next.js', 'Tailwind CSS', 'Sanity CMS', 'TypeScript'],
     source: 'https://github.com/feliperucunha/avarage-blog',
     visit: 'https://avarege-blog.vercel.app',
-    id: 1,
-  },
-  {
-    title: 'Anime Catalog',
-    description:"An anime catalog that uses a public API and shows top rated anime, searches specific anime and also shows details about them. [PT-BR]",
-    image: '/images/2.png',
-    tags: ['React.js', 'Next.js', 'AntDesign', 'LESS'],
-    source: 'https://github.com/feliperucunha/anime-catalog',
-    visit: 'https://teste-company-hero.vercel.app',
-    id: 1,
-  },
-  {
-    title: 'LocalTips',
-    description: "A FullStack map tool that shows the Federal University of Para and the user can mark down places to give others some tips about them. [PT-BR]",
-    image: '/images/4.png',
-    tags: ['React.js', 'TypeScript', 'Node.js', 'Express', 'SQLite3', 'Yup'],
-    source: 'https://github.com/feliperucunha/localtips-frontend',
-    visit: 'https://pedantic-euclid-cf2200.netlify.app/',
-    id: 3,
+    id: 2,
   },
   {
     title: 'This Portfolio',
@@ -195,17 +198,20 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Came from Vet School to Computer Engineering at UFPA', },
-  { year: 2018, text: 'Started studying the basics of C and Python', },
-  { year: 2019, text: 'Entered an Internship at the Public Ministry as a FullStack Developer', },
-  { year: 2020, text: 'Started working at a Startup called Cosmobots and later at a company called Viasoft', },
+  { year: 2017, text: 'Came from Vet School to the Computer Engineering course at UFPA', },
+  { year: 2018, text: 'Started studying the basics of C, C++, Java and Python at the Internship at the Public Ministry as a FullStack Developer', },
+  { year: 2019, text: 'Chose JavaScript as my main language during the internship and started working with ReactJs', },
+  { year: 2020, text: 'Started working at a Startup called Cosmobots and later on at a company called Viasoft', },
   { year: 2021, text: `Got a job at Brazil's greatest software house: Compass.UOL`, },
-  { year: 2022, text: 'Got promoted to mid level developer and currently improving my skills', },
+  { year: 2022, text: 'Joined the biggest company on building streaming applications: Accedo', },
+  { year: 'Now', text: 'Currently I am improving my skills and delivering the best software I can while sharing knowledge', },
 ];
 
+const currentYear = new Date().getFullYear()
+
 export const AccomplishmentsData = [
-  { number: 2, text: 'Years of professional experience' },
-  { number: 4, text: 'Years of coding experience', },
+  { number: (currentYear - 2019), text: 'Years of professional experience' },
+  { number: (currentYear - 2017), text: 'Years of coding experience', },
   { number: 10, text: 'Frameworks and tools used over time', },
   { number: 1000, text: 'Pull Requests on Bitbucket and Gitlab', }
 ];

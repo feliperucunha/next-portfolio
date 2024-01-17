@@ -4,6 +4,7 @@ import {
   BlogCard,
   CardInfo,
   ExternalLinks,
+  PrivateLinks,
   GridContainer,
   HeaderThree,
   Hr,
@@ -27,7 +28,7 @@ const Projects = () => (
     <SectionTitle main>Personal Projects</SectionTitle>
     <GridContainer>
       {projects.map(
-        ({ id, image, title, description, tags, source, visit }) => (
+        ({ id, image, title, description, tags, source, visit, isPrivate }) => (
           <BlogCard key={id}>
             <Img src={image} />
             <TitleContent>
@@ -45,12 +46,24 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks target="_blank" href={visit}>
-                Demo
-              </ExternalLinks>
-              <ExternalLinks target="_blank" href={source}>
-                Code <AiOutlineGithub />
-              </ExternalLinks>
+              {visit ? (
+                <ExternalLinks target="_blank" href={visit}>
+                  Demo
+                </ExternalLinks>
+              ) : (
+                <PrivateLinks>
+                  Not released yet
+                </PrivateLinks>
+              )}
+              {isPrivate ? (
+                <PrivateLinks>
+                  Private Code <AiOutlineGithub />
+                </PrivateLinks>
+              ) : (
+                <ExternalLinks target="_blank" href={source}>
+                  Code <AiOutlineGithub />
+                </ExternalLinks>
+              )}
             </UtilityList>
           </BlogCard>
         )

@@ -15,8 +15,11 @@ export const FooterWrapper = styled.section`
 `
 
 export const LinkItem = styled.a`
+	display: flex;
 	font-size: 18px;
 	line-height: 30px;
+	border-radius: 6px;
+	overflow: hidden;
 	color: rgba(255, 255, 255, 0.75);
 	margin-bottom: 16px;
 	transition: .3s ease;
@@ -118,9 +121,11 @@ export const ImageContainer = styled.div`
 	display: flex;
   	align-items: center;
 	cursor: pointer;
+	position: relative;
+	bottom: 40px;
 	transition: 0.5s;
 	:hover {
-		transform: scale(1.3);
+		transform: scale(1.05);
 	}
 
 	@media ${props => props.theme.breakpoints.md}{
@@ -159,8 +164,8 @@ export const LinkList = styled.ul`
 export const LinkColumn = styled.div`
 	display: flex;
 	flex-direction: column;
-	max-width: 220px;
-	width: 100%;
+	max-width: 240px;
+	width: 110%;
 `
 export const LinkTitle = styled.h4`
 	font-style: normal;

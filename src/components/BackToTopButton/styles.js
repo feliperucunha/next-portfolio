@@ -20,4 +20,11 @@ export const Button = styled.div`
   z-index: 1;
   cursor: pointer;
   color: white;
+
+  transition: 0.5s;
+  &:hover{
+    svg {
+      color: gray;
+    };
+  }
 `

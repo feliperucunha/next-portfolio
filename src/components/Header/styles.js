@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
   background: #0F1624;
   border-radius: 5px;
   z-index: 2;
-  box-shadow: 0px 5px 15px 0px;
+  box-shadow: 0px 2px 6px 0px;
   padding-bottom: 0;
   margin-bottom: 2rem;
 
@@ -36,14 +36,14 @@ export const NavbarContainer = styled.div`
     display: grid;
     grid-column-gap: 0.5rem;
     grid-row-gap: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-column-gap: 0.5rem;
     grid-row-gap: 0;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
 `;
 
@@ -51,6 +51,8 @@ export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2; 
   display: -webkit-inline-box;
   flex-direction: row;
+  cursor: pointer;
+  min-width: 154px;
   align-content: center;
   gap: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -62,15 +64,20 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+
+  li {
+    margin-right: 10px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-area: 2 / 1 / 3 / 6;
   }
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
+  grid-area: 1 / 4 / 1 / 6;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: -10px;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
