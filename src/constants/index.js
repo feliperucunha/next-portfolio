@@ -142,7 +142,7 @@ export const projects = [
     title: 'Universal+ Streaming Web and CTV apps',
     description: "A huge project ordered by Universal to build it's streaming service on all platforms. I was in charge of building the web and ctv versions along with my team.",
       image: '/images/8.png',
-      tags: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Styled Components', 'Accedo Control (CMS)'],
+      tags: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Accedo Control (CMS)'],
     source: '#',
     visit: false,
     isPrivate: true,

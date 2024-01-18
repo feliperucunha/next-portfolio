@@ -26,7 +26,6 @@ export const NavbarContainer = styled.div`
   padding: 1rem;
   padding-top: 2rem;
   background: #0F1624;
-  border-radius: 5px;
   z-index: 2;
   box-shadow: 0px 2px 6px 0px;
   padding-bottom: 0;
@@ -166,7 +165,6 @@ color: white;
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
     
