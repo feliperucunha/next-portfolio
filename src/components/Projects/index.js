@@ -35,41 +35,43 @@ const Projects = () => (
               <HeaderThree title>{title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
-              <br />
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
+            <div style={{height: !visit ? '320px' : '355px', display:'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+              <div>
+                <CardInfo>{description}</CardInfo>
+              </div>
+              <div>
+                <br />
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
+                  ))}
+                </TagList>
+                <UtilityList>
+                  {visit ? (
+                    <ExternalLinks target="_blank" href={visit}>
+                      Demo
+                    </ExternalLinks>
+                  ) : (
+                    <PrivateLinks>Not released yet</PrivateLinks>
+                  )}
+                  {isPrivate ? (
+                    <PrivateLinks>
+                      Private Code <AiOutlineGithub />
+                    </PrivateLinks>
+                  ) : (
+                    <ExternalLinks target="_blank" href={source}>
+                      Code <AiOutlineGithub />
+                    </ExternalLinks>
+                  )}
+                </UtilityList>
+              </div>
             </div>
-            <UtilityList>
-              {visit ? (
-                <ExternalLinks target="_blank" href={visit}>
-                  Demo
-                </ExternalLinks>
-              ) : (
-                <PrivateLinks>
-                  Not released yet
-                </PrivateLinks>
-              )}
-              {isPrivate ? (
-                <PrivateLinks>
-                  Private Code <AiOutlineGithub />
-                </PrivateLinks>
-              ) : (
-                <ExternalLinks target="_blank" href={source}>
-                  Code <AiOutlineGithub />
-                </ExternalLinks>
-              )}
-            </UtilityList>
           </BlogCard>
         )
       )}
     </GridContainer>
-    <div style={{width: '30%', margin: 'auto'}}>
+    <div style={{ width: "30%", margin: "auto" }}>
       <ExternalLinks
         target="_blank"
         href="https://github.com/feliperucunha?tab=repositories"
